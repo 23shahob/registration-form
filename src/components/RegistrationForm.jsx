@@ -6,7 +6,7 @@ const RegistrationForm = () => {
   return (
     <div className="w-[752px] rounded bg-white">
       <form>
-        <div className="border-b border-[#005875] px-[52px] py-10">
+        <div className="border-b border-[#005875] px-3 py-7 sm:px-[52px] sm:py-10">
           <h1 className="text-[32px] font-bold leading-[145%] text-[#005875]">
             Registration Form
           </h1>
@@ -14,14 +14,14 @@ const RegistrationForm = () => {
             Fill out the form carefully for registration
           </p>
         </div>
-        <div className="border-b border-[#005875] px-[38px]">
+        <div className="border-b border-[#005875] sm:px-[38px]">
           <div
             className={`mx-1 mb-3 mt-7 rounded px-[10px] py-3 ${isActive === 1 ? "bg-[#dbf3fa]" : "bg-white"}`}
           >
             <label className="mb-4 block font-medium text-[#005875]">
               Student Name
             </label>
-            <div className="flex gap-2">
+            <div className="flex flex-col gap-y-4 sm:flex sm:flex-row sm:gap-2">
               <span>
                 <input
                   className="h-10 w-full rounded border border-[#005875] px-3 hover:ring focus:outline-none focus:ring focus:ring-[#367c96] hover:focus:ring-[#005875]"
@@ -72,9 +72,9 @@ const RegistrationForm = () => {
               </span>
             </div>
           </div>
-          <div className="flex w-full">
+          <div className="w-full sm:flex">
             <div
-              className={`mx-1 my-3 w-1/2 rounded px-[10px] py-3 ${isActive == 2 ? "bg-[#dbf3fa]" : "bg-white"}`}
+              className={`mx-1 my-3 rounded px-[10px] py-3 sm:w-1/2 ${isActive == 2 ? "bg-[#dbf3fa]" : "bg-white"}`}
             >
               <label
                 className="mb-4 block font-medium text-[#005875]"
@@ -82,8 +82,8 @@ const RegistrationForm = () => {
               >
                 Birth Date
               </label>
-              <div className="flex gap-2">
-                <div>
+              <div className="flex w-full gap-2">
+                <div className="w-full">
                   <select
                     required
                     className="h-10 w-full rounded border border-[#005875] text-[#005875] hover:ring focus:outline-none focus:ring-2 focus:ring-[#367c96] hover:focus:ring-[#005875]"
@@ -112,7 +112,7 @@ const RegistrationForm = () => {
                     Month
                   </label>
                 </div>
-                <div>
+                <div className="w-full">
                   <select
                     required
                     className="h-10 w-full rounded border border-[#005875] text-[#005875] hover:ring focus:outline-none focus:ring-2 focus:ring-[#367c96] hover:focus:ring-[#005875]"
@@ -132,7 +132,7 @@ const RegistrationForm = () => {
                     Day
                   </label>
                 </div>
-                <div>
+                <div className="w-full">
                   <select
                     required
                     className="h-10 w-full rounded border border-[#005875] text-[#005875] hover:ring focus:outline-none focus:ring-2 focus:ring-[#367c96] hover:focus:ring-[#005875]"
@@ -155,7 +155,7 @@ const RegistrationForm = () => {
               </div>
             </div>
             <div
-              className={`mx-1 my-3 w-1/2 rounded px-[10px] py-3 ${isActive === 3 ? "bg-[#dbf3fa]" : "bg-white"}`}
+              className={`mx-1 my-3 rounded px-[10px] py-3 sm:w-1/2 ${isActive === 3 ? "bg-[#dbf3fa]" : "bg-white"}`}
             >
               <label className="mb-4 block font-medium text-[#005875]">
                 Gender
@@ -270,9 +270,9 @@ const RegistrationForm = () => {
               </div>
             </div>
           </div>
-          <div className="flex w-full">
+          <div className="w-full sm:flex">
             <div
-              className={`mx-1 my-3 w-1/2 rounded px-[10px] py-3 ${isActive === 5 ? "bg-[#dbf3fa]" : "bg-white"}`}
+              className={`mx-1 my-3 rounded px-[10px] py-3 sm:w-1/2 ${isActive === 5 ? "bg-[#dbf3fa]" : "bg-white"}`}
             >
               <label className="mb-4 block font-medium text-[#005875]">
                 Student E-mail
@@ -296,7 +296,7 @@ const RegistrationForm = () => {
               </div>
             </div>
             <div
-              className={`mx-1 my-3 w-1/2 rounded px-[10px] py-3 ${isActive === 6 ? "bg-[#dbf3fa]" : "bg-white"}`}
+              className={`mx-1 my-3 rounded px-[10px] py-3 sm:w-1/2 ${isActive === 6 ? "bg-[#dbf3fa]" : "bg-white"}`}
             >
               <label className="mb-4 block font-medium text-[#005875]">
                 Mobile Number
@@ -317,9 +317,9 @@ const RegistrationForm = () => {
               </div>
             </div>
           </div>
-          <div className="flex w-full">
+          <div className="w-full sm:flex">
             <div
-              className={`mx-1 my-3 w-1/2 rounded px-[10px] py-3 ${isActive === 7 ? "bg-[#dbf3fa]" : "bg-white"}`}
+              className={`mx-1 my-3 rounded px-[10px] py-3 sm:w-1/2 ${isActive === 7 ? "bg-[#dbf3fa]" : "bg-white"}`}
             >
               <label className="mb-4 block font-medium text-[#005875]">
                 Phone Number
@@ -340,7 +340,7 @@ const RegistrationForm = () => {
               </div>
             </div>
             <div
-              className={`mx-1 my-3 w-1/2 rounded px-[10px] py-3 ${isActive === 8 ? "bg-[#dbf3fa]" : "bg-white"}`}
+              className={`mx-1 my-3 rounded px-[10px] py-3 sm:w-1/2 ${isActive === 8 ? "bg-[#dbf3fa]" : "bg-white"}`}
             >
               <label className="mb-4 block font-medium text-[#005875]">
                 Work Number
@@ -361,9 +361,9 @@ const RegistrationForm = () => {
               </div>
             </div>
           </div>
-          <div className="flex w-full">
+          <div className="w-full sm:flex">
             <div
-              className={`mx-1 my-3 w-1/2 rounded px-[10px] py-3 ${isActive === 9 ? "bg-[#dbf3fa]" : "bg-white"}`}
+              className={`mx-1 my-3 rounded px-[10px] py-3 sm:w-1/2 ${isActive === 9 ? "bg-[#dbf3fa]" : "bg-white"}`}
             >
               <label className="mb-4 block font-medium text-[#005875]">
                 Company
@@ -383,7 +383,7 @@ const RegistrationForm = () => {
               </div>
             </div>
             <div
-              className={`mx-1 my-3 w-1/2 rounded px-[10px] py-3 ${isActive === 10 ? "bg-[#dbf3fa]" : "bg-white"}`}
+              className={`mx-1 my-3 rounded px-[10px] py-3 sm:w-1/2 ${isActive === 10 ? "bg-[#dbf3fa]" : "bg-white"}`}
             >
               <label className="mb-4 block font-medium text-[#005875]">
                 Courses
